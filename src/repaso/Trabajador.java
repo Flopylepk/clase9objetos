@@ -15,8 +15,13 @@ public class Trabajador {
 		this.salario=c;
 	}
 	
-	public static double CalcularDiasVacaciones(Period d) {
-		int a=d*7;
+	public double CalcularDiasVacaciones(int b) {
+		int a=b*7;
+		return a;
+	}
+	
+	public double CalcularAumentoSalarial(int b) {
+		int a=b*1000;
 		return a;
 	}
 

@@ -15,11 +15,18 @@ public class main {
 		Trabajador fran= new Trabajador("fran", inicio, 2000);
 		JOptionPane.showMessageDialog(null, fran);
 		Period periodo=Period.between(hoy, inicio);
+		int pe=periodo.getYears();
 		
-		double vacaciones=CalcularDiasVacaciones(periodo);
+		double vacaciones=CalcularDiasVacaciones(pe);
+		
+		JOptionPane.showMessageDialog(null, "lo que le corresponde de vacaciones es: "+vacaciones);
+		
+		double aumento=CalcularAumentoSalarial(pe);
 		
 	}
 
 	}
 
-}
+	
+
+
