@@ -1,6 +1,7 @@
 package repaso;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 public class Trabajador {
 
@@ -12,6 +13,11 @@ public class Trabajador {
 		this.nombre=a;
 		this.inicio=b;
 		this.salario=c;
+	}
+	
+	public static double CalcularDiasVacaciones(Period d) {
+		int a=d*7;
+		return a;
 	}
 
 	@Override
